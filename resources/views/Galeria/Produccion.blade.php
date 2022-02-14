@@ -1,6 +1,6 @@
 @extends('Layout/layout')
 @section('primero', 'Galeria')
-@section('segundo', 'Granja de Abejas')
+@section('segundo', 'Produccion')
 
 @section('content')
 <h1> ola diablo</h1>

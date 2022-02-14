@@ -57,21 +57,21 @@
                         class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
                         <ul class="py-1" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{route('productos')}}"
+                                <a href="{{route('productos.paletas')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Paletas de
                                     Miel</a>
                             </li>
                             <li>
-                                <a href="{{route('productos')}}"
+                                <a href="{{route('productos.polen')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Polen</a>
                             </li>
                             <li>
-                                <a href="{{route('productos')}}"
+                                <a href="{{route('productos.jalea')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Jalea
                                     Real</a>
                             </li>
                             <li>
-                                <a href="{{route('productos')}}"
+                                <a href="{{route('productos.propoleo')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Propoleo</a>
                             </li>
                         </ul>
@@ -92,17 +92,17 @@
                         class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
                         <ul class="py-1" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{route('galerias')}}"
+                                <a href="{{route('galerias.granja')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Granja de
                                     Abejas</a>
                             </li>
                             <li>
-                                <a href="{{route('galerias')}}"
+                                <a href="{{route('galerias.tiendas')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Nuestras
                                     Tiendas</a>
                             </li>
                             <li>
-                                <a href="{{route('galerias')}}"
+                                <a href="{{route('galerias.produccion')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Producción</a>
                             </li>
                         </ul>
@@ -122,15 +122,15 @@
                         class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow ">
                         <ul class="py-1" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{route('ubicaciones')}}"
+                                <a href="{{route('ubicaciones.centro')}}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Centro</a>
                             </li>
                             <li>
-                                <a href="{{route('ubicaciones')}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">La
+                                <a href="{{route('ubicaciones.cantera')}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">La
                                     Cantera</a>
                             </li>
                             <li>
-                                <a href="{{route('ubicaciones')}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">La
+                                <a href="{{route('ubicaciones.loma')}}" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">La
                                     Loma</a>
                             </li>
                         </ul>
