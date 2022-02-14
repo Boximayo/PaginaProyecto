@@ -3,13 +3,14 @@
 @section('segundo', '')
 @section('content')
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">PRODUCTOS</H1>
+    <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items ">
+
     @foreach ($productos as $item)
-        <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items ">
 
             <div
                 class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
                 <!-- Image -->
-                <img class="h-40 object-cover rounded-xl" h-40="" object-cover="" rounded-xl"=""
+                <img class="h-40 object-cover rounded-xl"
                     src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"
                     alt="">
                 <div class="p-2">
@@ -24,12 +25,13 @@
                         mas ...</a>
                 </div>
             </div>
-        </div>
-    @endforeach
 
+    @endforeach
+</div>
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">UBICACIONES</H1>
+    <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items">
+
     @foreach ($ubicaciones as $item)
-        <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items">
 
             <div
                 class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
@@ -49,9 +51,9 @@
                         mas ...</a>
                 </div>
             </div>
-        </div>
-    @endforeach
 
+    @endforeach
+</div>
 
 
 
