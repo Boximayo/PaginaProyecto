@@ -10,7 +10,7 @@
         class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
         <!-- Image -->
         <img class="h-40 object-cover rounded-xl" h-40="" object-cover="" rounded-xl"=""
-            src="../Imagenes/miel/centro.jpg"
+            src="../../Imagenes/miel/cantera.jpg"
             alt="">
         <div class="p-2">
             <!-- Heading -->

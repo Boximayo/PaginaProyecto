@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\UbicacionesController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\GaleriaController;
+use App\Http\Controllers\ContactanosController;
+use App\Http\Controllers\MapaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,17 +55,11 @@ Route::get('/productos/propoleo', [ProductosController::class,'index4' ])->name(
 
 
 //RUTAS GALERIA
-route::get('/galeria-granjas', function(){
-	return view('Galeria/Granja');
-})->name('galerias.granja');
 
-route::get('/galeria-tiendas', function(){
-	return view('Galeria/Tiendas');
-})->name('galerias.tiendas');
+Route::get('/galeria/granjas', [GaleriaController::class,'index' ])->name('galerias.granja');
+Route::get('/galeria/tiendas', [GaleriaController::class,'index2' ])->name('galerias.tiendas');
+Route::get('/galeria/produccion', [GaleriaController::class,'index3' ])->name('galerias.produccion');
 
-route::get('/galeria-produccion', function(){
-	return view('Galeria/Produccion');
-})->name('galerias.produccion');
 
 
 //RUTAS UBICACIONES
@@ -75,3 +72,9 @@ Route::get('/ubicaciones/loma', [UbicacionesController::class,'index3' ])->name(
 //RUTAS INDEX
 
 Route::get('/', [IndexController::class,'index' ])->name('index.index');
+
+//RUTAS CONTACTANOS
+Route::get('/contactanos', [ContactanosController::class,'index' ])->name('contactanos');
+
+//RUTAS MAPAS
+Route::get('/mapa', [MapaController::class,'index' ])->name('mapa');

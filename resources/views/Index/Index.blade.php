@@ -5,7 +5,7 @@
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">PRODUCTOS</H1>
     <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items ">
 
-    @foreach ($productos as $item)
+    @forelse ($productos as $item)
 
             <div
                 class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
@@ -26,7 +26,11 @@
                 </div>
             </div>
 
-    @endforeach
+    @empty
+    <p>
+        Sin resultados
+    </p>
+    @endforelse
 </div>
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">UBICACIONES</H1>
     <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items">
