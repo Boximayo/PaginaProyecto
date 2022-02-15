@@ -8,7 +8,7 @@
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h3>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">PAGINAS</h3>
                 <ul>
                     <li class="mb-4">
                         <a href="#" target="_blank"
@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h3>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">SIGUENOS</h3>
                 <ul>
                     <li class="mb-4">
                         <a href="#" target="_blank"
@@ -34,15 +34,13 @@
                 </ul>
             </div>
             <div>
-                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h3>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase">LEGAL</h3>
                 <ul>
                     <li class="mb-4">
-                        <a href="#" target="_blank" class="text-gray-600 hover:underline">Privacy
-                            Policy</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:underline">Politica de Privacidad</a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" class="text-gray-600 hover:underline">Terms
-                            &amp; Conditions</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:underline">Terminos y Condiciones</a>
                     </li>
                 </ul>
             </div>
