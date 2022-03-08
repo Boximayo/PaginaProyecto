@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\productos;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\stdClass;
 
 class ProductosController extends Controller
 {
@@ -75,4 +77,34 @@ class ProductosController extends Controller
 
         return view('Productos/Propoleo', ['productos'=>$productos, 'search'=>$search]);
     }
+
+    public function create()
+    {
+        $search= request()->query('search');
+        if ($search){
+            $productos=DB::table('productos')
+            ->select('id', 'nombre', 'descripcion', 'tipo')
+            ->where('nombre','LIKE','%'.$search.'%')
+            ->orWhere('descripcion','LIKE','%'.$search.'%')
+            ->orderBy('id','asc')
+            ->paginate(10);
+        }else {
+            $productos=productos::all();
+        }
+        return view ('Productos.create', ['productos'=>$productos, 'search'=>$search]);
+    }
+
+    public function store()
+    {
+
+            productos::create([
+                'nombre' => request('nombre'),
+                'descripcion' => request('descripcion'),
+                'tipo' => request('tipo'),
+            ]);
+
+            return redirect()->route('index.index');
+
+    }
+
 }

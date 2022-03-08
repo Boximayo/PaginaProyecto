@@ -50,6 +50,9 @@ Route::get('/productos/paletas', [ProductosController::class,'index' ])->name('p
 Route::get('/productos/polen', [ProductosController::class,'index2' ])->name('productos.polen');
 Route::get('/productos/jalea', [ProductosController::class,'index3' ])->name('productos.jalea');
 Route::get('/productos/propoleo', [ProductosController::class,'index4' ])->name('productos.propoleo');
+Route::get('/productos/crear', [ProductosController::class,'create' ])->name('productos.create');
+Route::post('/productos', [ProductosController::class,'store' ])->name('productos.store');
+
 
 
 
