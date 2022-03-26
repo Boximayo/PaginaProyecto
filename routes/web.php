@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\UbicacionesController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\AdministradorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,9 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('Index/Index');
-// });
+ Route::get('/', function () {
+     return view('Index/Index');
+ });
 
 route::get('/productos', function(){
 	return view('Productos/Productos');
@@ -75,3 +76,12 @@ Route::get('/ubicaciones/loma', [UbicacionesController::class,'index3' ])->name(
 //RUTAS INDEX
 
 Route::get('/', [IndexController::class,'index' ])->name('index.index');
+
+Route::get('/administracion' , [AdministradorController::class , 'index'])
+->middleware('auth.admin')
+->name('admin.index');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
