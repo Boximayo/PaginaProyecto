@@ -1,4 +1,4 @@
-<footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+<footer class="p-4 mt-5 bg-gradient-to-r from-amber-400 to-amber-300">
     <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="/" class="flex">

@@ -56,7 +56,7 @@
 
 
 
-    <div id="indicators-carousel" class="relative mt-5 mb-7" data-carousel="static">
+    <div id="indicators-carousel" class="relative mt-5 mb-7" data-carousel="slide">
 
         <div class="overflow-hidden relative h-48 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
 
