@@ -17,9 +17,9 @@
     @include('Partials.footer')
 
 
-    <script src="../path/to/flowbite/dist/flowbite.js"></script>
-    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
 
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="/path/to/flowbite/dist/flowbite.js"></script>
 </body>
 
 </html>
