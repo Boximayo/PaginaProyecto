@@ -5,7 +5,13 @@
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">PRODUCTOS</H1>
 
     <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items ">
+
+        @php 
+        $count = 0;
+        @endphp
+
         @foreach ($productos as $item)
+        @break($count == 7)
             <div
                 class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
                 <!-- Image -->
@@ -24,13 +30,22 @@
                         mas ...</a>
                 </div>
             </div>
+            @php
+            $count++;
+            @endphp
         @endforeach
     </div>
 
     <H1 class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items font-bold text-lg mb-2 my-2">UBICACIONES</H1>
 
     <div class="bg-gray-100 w-full gap-4 flex-wrap flex justify-center items">
+
+        @php 
+        $count = 0;
+        @endphp
+
         @foreach ($ubicaciones as $item)
+        @break($count == 7)
             <div
                 class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
                 <!-- Image -->
@@ -49,6 +64,10 @@
                         mas ...</a>
                 </div>
             </div>
+
+            @php
+            $count++;
+            @endphp
         @endforeach
     </div>
 
